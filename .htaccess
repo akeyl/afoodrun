@@ -1,0 +1,37 @@
+RewriteEngine On
+RewriteRule ^index$ index.php
+RewriteRule ^edit$ edit.php
+RewriteRule ^links$ links.php
+RewriteRule ^friends$ friends.php
+RewriteRule ^request$ request.php
+RewriteRule ^contacts$ contacts.php
+RewriteRule ^search$ search.php
+RewriteRule ^directory$ directory.php
+RewriteRule ^activity$ activity.php
+RewriteRule ^email$ email.php
+RewriteRule ^logout$ logout.php
+RewriteRule ^account$ account.php
+RewriteRule ^password$ password.php
+RewriteRule ^share$ share.php
+RewriteRule ^dashboard$ dashboard.php
+RewriteRule ^groups$ group.php
+RewriteRule ^home$ home.php
+RewriteRule ^forgot$ forgot.php
+RewriteRule ^join$ join.php
+RewriteRule ^history$ history.php
+RewriteRule ^signup$ signup.php
+RewriteRule ^invites$ invites.php
+RewriteRule ^list$ list.php
+RewriteRule ^activation$ activation.php
+ 
+RewriteRule ^([a-zA-Z0-9_-]+)$ profile.php?id=$1
+
+RewriteRule ^([a-zA-Z0-9_-]+)&ref=([a-zA-Z0-9_-]+)$ profile.php?id=$1&ref=$2
+
+RewriteRule ^([a-zA-Z0-9_-]+)/mutual$ profile.php?url=$1&page=mutual
+RewriteRule ^([a-zA-Z0-9_-]+)/contacts$ profile.php?url=$1&page=contacts
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ profile.php?url=oops
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ profile.php?url=oops
+RewriteRule ^([a-zA-Z0-9_-]+)/$ profile.php?url=oops
+

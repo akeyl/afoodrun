@@ -1,0 +1,61 @@
+vendors
+	vid
+	menu
+	- name
+	- image
+	- cost
+	- review
+
+	location
+	- city
+	- zipcode
+	
+	orders
+	- id
+
+	ratings
+	- id
+	- value
+
+	review
+	- id
+	- comment
+	
+clients
+	cid
+	name
+	location
+
+	orders
+	- id
+
+
+drivers
+	did
+	name
+	location
+	ratings
+
+	orders
+	- id
+
+	tracker
+
+	ratings
+	- id
+	- value
+
+	review
+	- id
+	- comment
+
+
+orders
+	orders
+	- oid
+	- status
+	- client
+	- driver
+	- vendor
+
+	
